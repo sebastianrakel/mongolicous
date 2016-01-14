@@ -5,8 +5,9 @@
 TEMPLATE = app
 TARGET = mongolicious
 INCLUDEPATH += .
+QT += gui declarative
 
 # Input
-HEADERS += lib/main.hh lib/mainwindow.hh
+HEADERS += lib/mainwindow.h
 FORMS += ui/mainwindow.ui
 SOURCES += src/main.cpp src/mainwindow.cpp

@@ -1,11 +1,13 @@
 #include <QApplication>
 #include <QLabel>
-#include "main.hh"
+#include "lib/mainwindow.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QLabel *label = new QLabel("Linux is wonderful", 0);
-    label->show();
+
+    MainWindow mainWindow;
+    mainWindow.show();
+
     return app.exec();
 }
