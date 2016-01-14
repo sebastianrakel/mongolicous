@@ -112,6 +112,13 @@
      <height>19</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuWindows">
+    <property name="title">
+     <string>Windows</string>
+    </property>
+    <addaction name="actionConsole"/>
+   </widget>
+   <addaction name="menuWindows"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -125,6 +132,11 @@
     <bool>false</bool>
    </attribute>
   </widget>
+  <action name="actionConsole">
+   <property name="text">
+    <string>Console</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
