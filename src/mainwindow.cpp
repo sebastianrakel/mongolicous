@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(actionConsole, SIGNAL(triggerd()), this, SLOT(consoleAction()));
+    connect(ui->actionConsole, SIGNAL(triggered()), this, SLOT(consoleAction()));
 }
 
 MainWindow::~MainWindow()
@@ -18,7 +18,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::consoleAction() {
-    ConsoleWindow consoleWindow;
+    ConsoleWindow consoleWindow(this);
 
-    consoleWindow.show();
+    consoleWindow.exec();
 }
