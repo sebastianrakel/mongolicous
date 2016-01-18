@@ -14,5 +14,11 @@ HEADERS += lib/*
 FORMS += ui/*
 SOURCES += src/*
 
+DESTDIR = build
+OBJECTS_DIR = build/.obj
+MOC_DIR = build/.moc
+RCC_DIR = build/.rcc
+UI_DIR = build/.ui
+
 LIBS += -L extlib/mongo-cxx-driver/build/install/lib/ -lmongoclient -lboost_thread -lboost_system -lboost_regex
 INCLUDEPATH += extlib/mongo-cxx-driver/build/install/include/
