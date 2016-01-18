@@ -13,3 +13,6 @@ CONFIG += qt debug
 HEADERS += lib/*
 FORMS += ui/*
 SOURCES += src/*
+
+LIBS += -L extlib/mongo-cxx-driver/build/install/lib/ -lmongoclient -lboost_thread -lboost_system -lboost_regex
+INCLUDEPATH += extlib/mongo-cxx-driver/build/install/include/
